@@ -1,0 +1,31 @@
+body { background-color: #f3f4f5; }
+h1 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+}
+h2 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+h3 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+p {
+    color: #757575;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size:18px;
+}
+ul {
+    color: #757575;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size:18px;
+}
+ol {
+    color: #757575;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size:18px;
+}
