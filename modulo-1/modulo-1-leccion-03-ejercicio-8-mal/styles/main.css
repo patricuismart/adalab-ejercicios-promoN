@@ -1,0 +1,59 @@
+:root {
+  --margen: 10px;
+  --colorfondo: #eaeaea;
+  --padin: 20px;
+  --colorfonfo: #eaeaea;
+  --ancho: 50%;
+  --tamanotexto: 16px;
+}
+
+body {
+  margin: var(--margen);
+}
+
+header {
+  /*background-color:#eaeaea;
+    padding:20px*/
+  background-color: var(--colorfondo);
+  padding: var(--padin);
+}
+
+main {
+  /*padding:20px*/
+  padding: var(--padin);
+}
+
+p {
+  /* width:50%;
+    font-size: 16px*/
+  width: var(--ancho);
+  font-size: var(--tamanotexto);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: grey;
+  margin: 0;
+}
+
+.subtitle {
+  color: grey;
+  margin: 0;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  color: green;
+  text-decoration: none;
+}
+
+p a {
+  color: green;
+}
