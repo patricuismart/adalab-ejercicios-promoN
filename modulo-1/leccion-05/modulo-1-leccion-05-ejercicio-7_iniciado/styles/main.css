@@ -1,7 +1,10 @@
-.cookies {
-  height: 100px;
-  width: 100%;
-  background-color: aqua;
+.enlace {
   position: fixed;
-  bottom: 0px;
+  bottom: 1%;
+  padding: 12px;
+}
+.img {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
 }
