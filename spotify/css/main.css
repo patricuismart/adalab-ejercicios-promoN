@@ -1,10 +1,24 @@
-.container {
+.header {
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  border: 1px solid rgb(139, 9, 156);
-  background-color: rgb(255, 255, 255);
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+.logo {
+  height: 35px;
+}
+.header .menu {
+  height: 20px;
+}
+
+.trial {
+  margin-top: 35px;
+  padding-top: 100px;
+  background-color: cornflowerblue;
+  height: 50vh;
+}
+.footer {
+  background-color: black;
 }
