@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  grid-gap: 10px;
+}
+.header {
+  background: deeppink;
+  color: white;
+}
+.content {
+  background: rgb(191, 92, 221);
+  color: white;
+}
+.menu {
+  background: rgb(20, 208, 255);
+  color: white;
+}
+
+.footer {
+  background: rgb(107, 212, 93);
+  color: white;
+}
+.row-header {
+  height: 20vh;
+}
+.row-content {
+  height: 60vh;
+}
+.row-footer {
+  height: 20vh;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+
+  <body>
+    <form action="/signup" method="post">
+      <h1>Create an account</h1>
+      <h3>It's free and allways will be.</h3>
+      <div>
+        <label for="fullName">Nombre completo</label>
+        <input
+          placeholder="Escribe aquí tu nombre de pila..."
+          type="text"
+          id="fullName"
+          name="fullName"
+          required
+        />
+      </div>
+      <div>
+        <label for="lastName">Apellido</label>
+        <input
+          placeholder="Apellido..."
+          type="text"
+          id="lastName"
+          name="lastName"
+        />
+      </div>
+      <div>
+        <label for="emailAddress">Correo electrónico</label>
+        <input
+          placeholder="Email or mobile number..."
+          type="email"
+          id="emailAddress"
+          name="emailAddress"
+          required
+        />
+      </div>
+      <div>
+        <label for="emailAddressConfirm">Correo electrónico</label>
+        <input
+          placeholder=" Re-enter Email or mobile number..."
+          type="email"
+          id="emailAddressConfirm"
+          name="emailAddressConfirm"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="password">Contraseña</label>
+        <input
+          placeholder="New password"
+          type="password"
+          id="password"
+          name="password"
+          required
+        />
+      </div>
+      <fieldset class="birthday">
+        <h3>Birthday</h3>
+        <div class="div1">
+          <label for="day"></label>
+          <select id="day" name="day">
+            <option value="1">Day</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div>
+          <label for="month"></label>
+          <select id="month" name="month">
+            <option value="1">Month</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="div1">
+          <label for="year"></label>
+          <select id="year" name="year">
+            <option value="1980">Year</option>
+            <option value="1970">1970</option>
+            <option value="1960">1960</option>
+            <option value="1950">1950</option>
+            <option value="1940">1940</option>
+          </select>
+        </div>
+        <small class="small">Why do I need to provide my date of birth</small>
+      </fieldset>
+
+      <fieldset class="genero">
+        <div>
+          <label for="female">
+            <input id="female" type="radio" value="female" name="female" />
+            Female
+          </label>
+        </div>
+        <div>
+          <label for="male">
+            <input id="male" type="radio" value="male" name="male" />
+            Male
+          </label>
+        </div>
+      </fieldset>
+      <p>
+        <small>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis
+          ducimus perferendis esse! Dolores neque officiis ducimus distinctio
+          optio! Dolores, deleniti. Modi maiores, voluptatem repudiandae fugiat
+          velit necessitatibus labore dolor optio!</small
+        >
+      </p>
+      <input type="submit" value="Create Account" />
+    </form>
+  </body>
+</html>

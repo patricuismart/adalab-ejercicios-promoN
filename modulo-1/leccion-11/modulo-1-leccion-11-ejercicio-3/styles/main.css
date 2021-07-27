@@ -1,0 +1,34 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20vh 1fr 20vh;
+  grid-gap: 5px;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  background: deeppink;
+  color: white;
+  grid-column: 1 / 13;
+  grid-row: fit-content(20%);
+}
+.menu {
+  background: rgb(20, 208, 255);
+  color: white;
+  grid-column: 1 / 5;
+}
+.content {
+  background: rgb(191, 92, 221);
+  color: white;
+  grid-column: 5 / 13;
+}
+.footer {
+  background: rgb(107, 212, 93);
+  color: white;
+  grid-column: 1 / 13;
+}

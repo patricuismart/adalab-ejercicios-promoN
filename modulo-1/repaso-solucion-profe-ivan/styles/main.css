@@ -15,7 +15,7 @@ body {
 }
 .header {
   /*border: solid var(--color-firered);*/
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   background-color: white;
   display: flex;
@@ -34,7 +34,6 @@ body {
   position: fixed;
   bottom: 0px;
   width: 100vw;
-
 }
 .icon {
   width: var(--size-icon);
@@ -47,17 +46,27 @@ body {
   margin: auto;
   position: relative;
   top: -24px;
-
-  
-
+}
+.copy {
+  color: grey;
+  font-weight: lighter;
+  font-size: 15px;
+  padding: 30px;
+}
 
 /*TABLET*/
 
 @media all and (min-width: 768px) {
-}
-.claim {
-  font-size: 40px;
-}
-.footer {
-  /* border: solid blue;*/
+  .footer {
+    /* border: solid blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icon {
+    position: absolute;
+    left: 90%;
+    top: 15px;
+  }
 }
