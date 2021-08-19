@@ -2,15 +2,12 @@
 const btnEl = getEl('.btn');
 debugger;
 function getEl(selector) {
-  const jsConst = document.querySelector(selector);
-  if (!jsConst) {
+  const htmlElement = document.querySelector(selector);
+  if (!htmlElement) {
     console.error(
       `No existe ningún elemento con clase, id o tag llamado ${selector}`
     );
   }
-  return jsConst;
+  return htmlElement;
 }
-
 console.log(btnEl);
-const otro2 = getEl('.otro');
-console.log(otro2);

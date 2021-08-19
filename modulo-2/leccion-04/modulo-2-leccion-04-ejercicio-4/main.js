@@ -1,11 +1,12 @@
 'use strict';
 
+const number = 10;
 
-function numero(a) {
-  return (a) ;
+function par() {
+  return number % 2;
 }
-const numResult = numero (11);
-if (numResult % 2 === 0)
-    console.log("El número es par");
-else
-    console.log("El número es impar");
+if (par === 0) {
+  console.log(`El número ${number} es par`);
+} else {
+  console.log(`El número ${number} es impar`);
+}
