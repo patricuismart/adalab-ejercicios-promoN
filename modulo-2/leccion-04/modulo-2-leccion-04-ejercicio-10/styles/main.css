@@ -1,0 +1,15 @@
+.box1 {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 150px;
+  border: solid 10px blue;
+}
+
+.box2 {
+  box-sizing: content-box;
+  padding: 20px;
+  width: 250px;
+  border: solid 1px rgb(0, 255, 128);
+  text-align: center;
+  margin: 20px;
+}
