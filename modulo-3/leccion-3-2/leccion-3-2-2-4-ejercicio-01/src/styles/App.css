@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  border: solid 3px lightgray;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.form__buton {
+  width: 70px;
+  background-color: rgb(4, 197, 181);
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  border-style: none;
+  margin-right: 20px;
+}
+.form__buton:hover {
+  background-color: grey;
+  color: white;
+}

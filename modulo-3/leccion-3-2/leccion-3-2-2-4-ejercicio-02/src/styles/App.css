@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+body {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+div h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form__buton {
+  width: 190px;
+  background-color: rgb(4, 197, 181);
+  height: 25px;
+  border-radius: 5px;
+  color: white;
+  border-style: none;
+  margin-bottom: 20px;
+}
+.form__buton:hover {
+  background-color: grey;
+  color: white;
+}
+
+.default {
+  background-color: white;
+  color: black;
+  padding: 40px;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+  padding: 40px;
+}

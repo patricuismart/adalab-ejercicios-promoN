@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+div h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.form__buton {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(4, 197, 181);
+  color: white;
+  border-style: none;
+  margin-bottom: 20px;
+}
+.form__buton:hover {
+  background-color: grey;
+  color: white;
+}
+
+.icon {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.shown {
+  display: block;
+  background-color: tomato;
+  width: 250px;
+  height: 250px;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  padding: 30px;
+}

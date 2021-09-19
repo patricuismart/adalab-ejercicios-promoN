@@ -1,13 +1,15 @@
-const name = document.querySelector
-
+const buton = document.querySelector('.js-search');
+const input = document.querySelector('.js-input');
 function getUserInfo() {
-  fetch('https://api.github.com/users'+ input.value)
+  debugger;
+  let user = input.value;
+  console.log(user);
+  fetch('https://api.github.com/users/' + user)
     .then((response) => response.json())
     .then((data) => {
-      const username = document.querySelector('input');
-      username. = loging;
-      name = `${username}`;
+      const userName = document.querySelector('.js-name');
+      userName.innerHTML = data.login;
     });
 }
-const btn = document.querySelector('.js-search');
-btn.addEventListener('click', getUserInfo);
+
+buton.addEventListener('click', getUserInfo);
