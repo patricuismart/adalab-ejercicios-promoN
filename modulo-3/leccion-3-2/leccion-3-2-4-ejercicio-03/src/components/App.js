@@ -3,7 +3,7 @@ import '../styles/App.css';
 import { useState } from 'react';
 
 const App = () => {
-  const [theme, setTheme] = useState('shown');
+  const [theme, setTheme] = useState('hidden');
   const renderHamburguerMenu = () => {
     if (theme === 'hidden') {
       setTheme('shown');
