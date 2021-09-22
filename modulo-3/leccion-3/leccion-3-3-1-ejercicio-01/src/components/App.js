@@ -1,16 +1,31 @@
 import { useState } from 'react';
 // Fichero src/components/App.js
 const App = () => {
-  const [ingredient, setIngredient] = useState(false);
+  const [ingredient, setIngredient] = useState([]);
   const handleIngredient = (ev) => {
-    const valueIngredient = ev.target.checked;
-    const idIngredient = ev.target.id;
-    setIngredient();
+    //ver si el inpt de checkbox está activo
+    // si si, lo añado al array
+
+    if (ev.currentTarget.checked) {
+      const newIngredient = [...ingredient, ev.currentTarget.value];
+
+      setIngredient(newIngredient);
+      console.log(newIngredient);
+    } else {
+      // si no, lo quito del array
+      const ingredientFilter = ingredient.filter(
+        (ingredientEl) => ingredientEl !== ev.currentTarget.value
+      );
+      setIngredient(ingredientFilter);
+      console.log(ingredientFilter);
+    }
   };
   const handleCheckAll = (ev) => {
+    ev.preventDefault();
     setIngredient(true);
   };
   const handleDesmarkAll = (ev) => {
+    ev.preventDefault();
     setIngredient(false);
   };
   return (
@@ -24,37 +39,39 @@ const App = () => {
           onChange={handleIngredient}
         />
         <label>Macarrones</label>
+
         <input
           type="checkbox"
           name="ingredients"
           value="patatas"
           onChange={handleIngredient}
-          checked=
         />
         <label>Patatas</label>
-        <input type="checkbox" />
-        <label>Nueces</label>
+
         <input
           type="checkbox"
           name="ingredients"
           value="huevos"
           onChange={handleIngredient}
         />
-        <label>Huevos</label>
+        <label>Nueces</label>
+
         <input
           type="checkbox"
           name="ingredients"
           value="cebolla"
           onChange={handleIngredient}
         />
-        <label>Cebolla</label>
+        <label>Huevos</label>
+
         <input
           type="checkbox"
           name="ingredients"
           value="cerveza"
           onChange={handleIngredient}
         />
-        <label>Cerveza</label>
+        <label>Cebolla</label>
+
         <button onClick={handleCheckAll}>Marca todos</button>
         <button onClick={handleDesmarkAll}>Desmarca todos</button>
         <p>
