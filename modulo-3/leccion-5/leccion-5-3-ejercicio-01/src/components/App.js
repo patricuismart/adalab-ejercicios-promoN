@@ -12,14 +12,9 @@ console.log(ls);
 const App = () => {
   //Estados
 
-  // Obtenemos el nombre del local storage
-  // Si hay datos en el local storage esta función los devolverá
-  // Si no hay datos en el local storage esta función devolverá el segundo parámetro, es decir, un string vacío
-  const localStorageTask = ls.get('tasks', '');
   // Usamos localStorageName como parámetro de useState porque queremos que al arrancar la página name tenga lo que había en el local storage
 
-  // Crearmos las series en el estado indicando el array inicial
-  const [tasks, setTasks] = useState(localStorageTask[
+  const localStorageTasks = ls.get('tasks', [
     { task: 'Comprar harina, jamón y pan rallado', completed: true },
     { task: 'Hacer croquetas ricas', completed: true },
     { task: 'Ir a la puerta de un gimnasio', completed: false },
@@ -28,6 +23,9 @@ const App = () => {
       completed: false,
     },
   ]);
+
+  // Crearmos las tareas en el estado indicando el array inicial
+  const [tasks, setTasks] = useState(localStorageTasks);
 
   useEffect(() => {
     // Guardamos la tarea local storage
